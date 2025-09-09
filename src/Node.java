@@ -1,24 +1,24 @@
-public class Node<T> {
-    
-    // Armazena um valor generico
-    private T entrada;
-    // Armazena o nó que está ao seu lado ! (Um endereço de memória)
+public class Node <T> {
+
+    // Valor Recebido dentro do nó
+    private T value;
+
+    // Ponteiro que irá apontar para o proximo nó
     private Node<T> next;
 
-    public Node(){
-        super();
+    public Node(){}
+
+    public Node(T value){
+        this.value = value;
+        this.next = null;
     }
 
-    public Node(T entrada){
-        this.entrada = entrada;
+    public T getValue() {
+        return value;
     }
 
-    public T getEntrada() {
-        return entrada;
-    }
-
-    public void setEntrada(T entrada) {
-        this.entrada = entrada;
+    public void setValue(T value) {
+        this.value = value;
     }
 
     public Node<T> getNext() {
@@ -30,5 +30,4 @@ public class Node<T> {
     }
 
     
-
 }
